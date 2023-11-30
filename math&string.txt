@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Javascript</title>
+</head>
+<body>
+<h2>JavaScript Math functions</h2>
+
+<p>Math.round(3.5):</p>
+<b><p id="demo1"></p></b>
+
+<p>Math.ceil(3.5):</p>
+<b><p id="demo2"></p></b>
+
+<p>Math.floor(3.5):</p>
+<b><p id="demo3"></p></b>
+
+<p>Math.abs(-5.5):</p>
+<b><p id="demo4"></p></b>
+
+<p>Math.pow(2,3):</p>
+<b><p id="demo5"></p></b>
+
+<p>Math.sqrt(81):</p>
+<b><p id="demo6"></p></b>
+
+<p>Math.sin(90):</p>
+<b><p id="demo7"></p></b>
+
+<p>Math.cos(0):</p>
+<b><p id="demo8"></p></b>
+
+<p>Math.min(0,-20,30,50,100,-55):</p>
+<b><p id="demo9"></p></b>
+
+<p>Math.max(0,-20,30,50,100,-55):</p>
+<b><p id="demo10"></p></b>
+
+<h2>JavaScript String functions</h2>
+
+<p>The length of String 'Hello' is using length:</p>
+<b><p id="str1"></p></b>
+
+<p>Slicing a word from the text 'Hello World Welcome' using slice():</p>
+<b><p id="str2"></p></b>
+
+<p>Taking substring from 'Apple Banana Kiwi' using substring():</p>
+<b><p id="str3"></p></b>
+
+<p>Taking substring from 'Apple Banana Kiwi' using substr():</p>
+<b><p id="str4"></p></b>
+
+<p>Replaceing Apple with Juice 'Apple Banana Kiwi Apple' using replace():</p>
+<b><p id="str5"></p></b>
+
+<p>Replaceing Apple with Juice 'Apple Banana Kiwi Apple' using replaceAll():</p>
+<b><p id="str6"></p></b>
+
+<p>Converting letters to uppercase in 'Apple' using toUpperCase():</p>
+<b><p id="str7"></p></b>
+
+<p>Converting letters to lowercase in 'Apple' using toLowerCase():</p>
+<b><p id="str8"></p></b>
+
+<p>Concatinating two words 'Apple' and 'Juice' using concat():</p>
+<b><p id="str9"></p></b>
+
+<p>Trim Spaces in '&nbsp;&nbsp;&nbsp;Hello World&nbsp;&nbsp;&nbsp;' using trim():</p>
+<b><p id="str10"></p></b>
+
+<p>Display first character in 'Hello World' using charAt():</p>
+<b><p id="str11"></p></b>
+<script>
+document.getElementById("demo1").innerHTML=Math.round(3.5);
+document.getElementById("demo2").innerHTML=Math.ceil(3.5);
+document.getElementById("demo3").innerHTML=Math.floor(3.5);
+document.getElementById("demo4").innerHTML=Math.abs(-5.5);
+document.getElementById("demo5").innerHTML=Math.pow(2,3);
+document.getElementById("demo6").innerHTML=Math.sqrt(81);
+document.getElementById("demo7").innerHTML="The sine value of 90 degree is "+Math.sin(90 * Math.PI/180);
+document.getElementById("demo8").innerHTML="The cosine value of 0 degree is "+Math.cos(0 * Math.PI/180);
+document.getElementById("demo9").innerHTML=Math.min(0,-20,30,50,100,-55);
+document.getElementById("demo10").innerHTML=Math.max(0,-20,30,50,100,-55);
+
+let txt1="Hello";
+document.getElementById("str1").innerHTML=txt1.length;
+
+let txt2="Hello World Welcome";
+document.getElementById("str2").innerHTML=txt2.slice(6,11);
+
+let txt3="Apple Banana Kiwi";
+document.getElementById("str3").innerHTML=txt3.substring(13,18);
+
+let txt4="Apple Banana Kiwi";
+document.getElementById("str4").innerHTML=txt4.substr(6,6);
+
+let txt5="Apple Banana Kiwi Apple";
+document.getElementById("str5").innerHTML=txt5.replace("Apple","Juice");
+
+let txt6="Apple Banana Kiwi Apple";
+document.getElementById("str6").innerHTML=txt6.replaceAll("Apple","Juice");
+
+let txt7="Apple";
+document.getElementById("str7").innerHTML=txt7.toUpperCase();
+
+let txt8="Apple";
+document.getElementById("str8").innerHTML=txt8.toLowerCase();
+
+let txt91="Apple";
+let txt92="Juice";
+document.getElementById("str9").innerHTML=txt91.concat(" ",txt92);
+
+let txt10="   Hello World   ";
+document.getElementById("str10").innerHTML=txt10.trim();
+
+let txt11="Hello World";
+document.getElementById("str11").innerHTML=txt11.charAt(0);
+</script>
+</body>
+</html>
